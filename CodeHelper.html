@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Helper - Learn Programming & Courses</title>
+    <link rel="icon"  href="./img/codehelper1.jpg">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+        :root {
+            --color1: #880E4F;
+            --color2: #f08307;
+        }
+
+        .bg-color1 {
+            background: var(--color1) !important;
+        }
+
+        .bg-color2 {
+            background: var(--color2) !important;
+        }
+
+        .text-color1 {
+            color: var(--color1) !important;
+        }
+
+        .text-color2 {
+            color: var(--color2) !important;
+        }
+
+        .top {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .top i {
+            border: 1px solid var(--color1) !important;
+            color: var(--color1) !important;
+            height: 25px;
+            width: 25px;
+            line-height: 25px;
+        }
+
+        .top i:hover {
+            transform: rotate(360deg);
+            transition: .8s;
+            background: var(--color2) !important;
+            color: white;
+            border: none !important;
+        }
+
+        #menu {
+            background: transparent !important;
+        }
+
+        #menu ul li a:hover {
+            color: var(--color1) !important;
+        }
+
+        .slider {
+            min-height: 500px;
+            background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/img1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            animation: slider 6s ease-in-out infinite;
+        }
+
+
+        @keyframes slider {
+            0% {
+                background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(images/slider3.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            50% {
+                background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(images/slider1.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            100% {
+                background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(images/webdev.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .login {
+            background: rgba(255, 255, 255, .6);
+            margin-top: 10% !important;
+
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        .service-box {
+            background: white;
+            border-radius: 10px;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            background: #1c1c1c;
+        }
+
+        .footer h5,
+        .footer h6 {
+            color: var(--color2);
+        }
+
+        .footer-link {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .footer-link:hover {
+            color: white;
+            padding-left: 5px;
+            transition: 0.3s;
+        }
+
+        .footer i {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .footer i:hover {
+            color: var(--color2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row top text-center py-1">
+            <div class="col-sm-3">
+                <i class="fa-solid fa-phone"></i>
+                +91,9651380984
+            </div>
+            <div class="col-sm-2">
+                <i class="fa-solid fa-envelope"></i>
+                Ankit2021pandey@gmail.com
+            </div>
+            <div class="col-sm-4">
+                An ISO 9001:2015 Certified Software Company
+            </div>
+            <div class="col-sm-3">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="row header sticky-top bg-white shadow-lg">
+            <div class="col-10 mx-auto">
+                <div class="row">
+                    <div class="col-sm-3 fs-2">
+                        Code <b class="text-color1">Helper<i class="fa-solid fa-code"></i></b>
+                    </div>
+                    <div class="col-sm-9">
+                        <!-- Start Menu -->
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="menu">
+                            <div class="container-fluid">
+
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav ms-auto ">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Services</a>
+                                        </li>
+                                       
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Courses</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Gallery</a>
+                                        </li>
+                                       
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact Us</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- End menu -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row slider">
+            <div class="col-sm-10 mx-auto">
+                <div class="row">
+                    <div class="col-sm-8  text-white pt-5">
+                        <div class="fs-2 pt-5"><i>Welcome to </i><b class="text-color2">Code Helper
+                                <i class="fa-solid fa-code"></i></b><br>
+                        </div>
+                        <div class="mt-3">
+                            <h5><i>Upgrade Your Coding Skills with Code Helper</i></h5>
+                            <p class="pt-2 pb-3"><i>Learn modern technologies, build real-world projects, and become job-ready with expert
+                                guidance.</i></p>
+                           
+                            <a href="#" class="bg-color2 text-dark py-2 px-3 rounded-pill"
+                                style="text-decoration: none;">Register now</a>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4 login px-4 pt-3 pb-4 mt-5 text-center rounded">
+                        <form action="#" method="post">
+                            <div class="fs-3">Sign<b class="text-color1"> in</b></div>
+
+                            <input type="email" placeholder="UserId" class="form-control" required><br>
+
+                            <input type="password" placeholder="Password" class="form-control" required><br>
+
+                            <input type="submit" value="Sign In" class="form-control bg-color1 text-white">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- start services -->
+        <div class="row services py-5 ">
+            <div class="col-sm-10 mx-auto">
+                <div class="row">
+                    <div class="col-sm-4 shadow-lg mb-2 p-5 service-box" style="background-color: rgb(255, 244, 244);">
+                        <i class="fa-solid fa-code fs-1 text-color1 mb-3"></i>
+                        <h5 class="text-color2">Web Development</h5>
+                        <p>We build responsive and modern websites using latest technologies like HTML, CSS, Bootstrap
+                            and JavaScript.</p>
+                    </div>
+                    <div class="col-sm-4  shadow-lg mb-2 p-5 service-box" style="background-color: rgb(237, 237, 237);">
+                        <i class="fa-solid fa-laptop-code fs-1 text-color1 mb-3"></i>
+                        <h5 class="text-color2">Software Training</h5>
+                        <p>Get hands-on training in MERN, .NET, Data Analytics with real-time projects and guidance.</p>
+                    </div>
+                    <div class="col-sm-4  shadow-lg mb-2 p-5 service-box" style="background-color: rgb(255, 244, 244);">
+                        <i class="fa-solid fa-user-graduate fs-1 text-color1 mb-3"></i>
+                        <h5 class="text-color2">Career Support</h5>
+                        <p>We help students with interview preparation, resume building, and placement support.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row intro bg-light py-4">
+            <div class="col-sm-10 mx-auto">
+                <div class="fs-2 text-center ">About <b class="text-color1 fs-2">Us</b></div>
+                <hr class="w-25 mx-auto">
+                <div style="text-align: justify;">
+                    <p style="text-align: justify;">
+                        <i> Code Helper is a learning platform designed to help students and professionals
+                            gain practical knowledge in programming and software development.
+                            We focus on real-world projects, industry-based training, and skill development.
+                        </i>
+                    </p>
+                    <p style="text-align: justify;">
+                        <i>
+                            Our mission is to make learning simple, practical, and career-oriented.
+                            We provide guidance, training, and support to help learners achieve their goals.
+                        </i>
+                    </p>
+
+                    <a href="#" class="btn bg-color1 text-white mt-2">Read More</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Start Gallery -->
+        <div class="row gallery " style="background-color: rgb(243, 240, 240);">
+            <div class="col-sm-10 mx-auto">
+                <div class="fs-2 text-center ">Our  <b class="text-color2">Projects</b></div>
+                <hr class="w-25 mx-auto">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <img src="images/Web.jpg" class="img-fluid border border-dark border-2 rounded-1 gallery-img" />
+                        <div class="text-center text-color2 mt-2">
+                            <b> WEB DEVELOPMENT </b> <br>
+                            <p class="text-dark">
+                                <i>Build fast, responsive and SEO-friendly websites.</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <img src="images/uiux.jpg" class="img-fluid border border-dark border-2 rounded-1 gallery-img" />
+                        <div class="text-center text-color2 mt-2">
+                            <b>UX Design </b> <br>
+                            <p class="text-dark">
+                                <i>Create modern and user-friendly interface designs.</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <img src="images/softDevelp.jpg" class="img-fluid border border-dark border-2 rounded-1 gallery-img" />
+                        <div class="text-center text-color2 mt-2">
+                            <b> Software Development </b> <br>
+                            <p class="text-dark">
+                                <i>Develop scalable applications using latest technologies.</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <img src="images/data.jpg" class="img-fluid border border-dark border-2 rounded-1 gallery-img" />
+                        <div class="text-center text-color2 mt-2">
+                            <b>Data Analytics </b> <br>
+                            <p class="text-dark">
+                                <i>Analyze data and generate meaningful insights.</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <img src="images/digital.jpg" class="img-fluid border border-dark border-2 rounded-1 gallery-img" />
+                        <div class="text-center text-color2 mt-2">
+                            <b> Digital Solutions </b> <br>
+                            <p class="text-dark">
+                                <i>Smart solutions for web, mobile, and cloud platforms.</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <img src="images/ai.jpg" class="img-fluid border border-dark border-2 rounded-1 gallery-img" />
+                        <div class="text-center text-color2 mt-2">
+                            <b> AI Development </b> <br>
+                            <p class="text-dark">
+                                <i>Build intelligent systems using Artificial Intelligence.</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start footer section -->
+        <div class="row footer bg-dark text-light pt-5 pb-3">
+            <div class="col-sm-10 mx-auto">
+                <div class="row">
+
+                    <!-- About -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-color2">Code Helper</h5>
+                        <p>
+                            A platform designed to help students learn programming,
+                            build projects, and grow their careers with practical skills.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-md-2 mb-4">
+                        <h6>Quick Links</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="footer-link">Home</a></li>
+                            <li><a href="#" class="footer-link">About</a></li>
+                            <li><a href="#" class="footer-link">Courses</a></li>
+                            <li><a href="#" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Courses -->
+                    <div class="col-md-3 mb-4">
+                        <h6>Courses</h6>
+                        <ul class="list-unstyled">
+                            <li>.NET Development</li>
+                            <li>MERN Stack</li>
+                            <li>Data Analytics</li>
+                            <li>Web Design</li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-md-3 mb-4">
+                        <h6>Contact</h6>
+                        <p><i class="fa-solid fa-phone"></i> +91 9651380984</p>
+                        <p><i class="fa-solid fa-envelope"></i> Ankit2021pandey@gmail.com</p>
+
+                        <div>
+                          
+                   <a href="https://www.github.com/Ankitpandeyup51/" target="_blank" class="text-decoration-none">
+                          <i class="fa-brands fa-github me-2"></i>
+                   </a>
+
+                 <a href="https://www.instagram.com/ankitpandey4621/" target="_blank" class="text-decoration-none">
+                   <i class="fa-brands fa-instagram me-2"></i>
+                     </a>
+
+                  <a href="https://www.linkedin.com/in/ankit-kumar-pandey-1308b936b/" target="_blank" class="text-decoration-none">
+                     <i class="fa-brands fa-linkedin me-2"></i>
+                    </a>
+
+                   <a href="https://www.youtube.com/@pandeyjiclasses/" target="_blank" class="text-decoration-none">
+                    <i class="fa-brands fa-youtube"></i>
+                               </a>
+
+                           </div>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Footer -->
+               
+                           <div class="text-center pt-3 border-top">
+                           <marquee behavior="scroll" direction="left" scrollamount="5">
+                            © 2026 Code Helper | Designed by : Er. Ankit Pandey
+                           </marquee>
+                              </div>
+                     </div>
+        </div>
+</body>
+</html>
